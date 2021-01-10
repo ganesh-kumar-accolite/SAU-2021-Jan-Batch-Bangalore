@@ -1,0 +1,29 @@
+INSERT INTO `cricket` (KEY,VALUE) VALUES ("1",{"Name":"David Warner","Team":"AUS","Runs":647,"Matches":10}),
+            ("2",{"Name":"Shakib Al Hasan","Team":"BAN","Runs":606,"Matches":8}),
+            ("3",{"Name":"Kane Williamson","Team":"NZ","Runs":578,"Matches":10}),
+            ("4",{"Name":"Joe Root","Team":"ENG","Runs":556,"Matches":11}),
+            ("5",{"Name":"Jonny Bairstow","Team":"ENG","Runs":532,"Matches":11}),
+            ("6",{"Name":"Aaron Finch","Team":"AUS","Runs":507,"Matches":10}),
+            ("7",{"Name":"Babar Azam","Team":"PAK","Runs":474,"Matches":8}),
+            ("8",{"Name":"Ben Stokes","Team":"ENG","Runs":465,"Matches":11}),
+            ("9",{"Name":"Jason Roy","Team":"ENG","Runs":443,"Matches":8}),
+            ("10",{"Name":"Virat Kohli","Team":"IND","Runs":442,"Matches":9}),
+            ("11",{"Name":"Faf du Plessis","Team":"SA","Runs":387,"Matches":9}),
+            ("12",{"Name":"Steve Smith","Team":"AUS","Runs":379,"Matches":10}),
+            ("13",{"Name":"Alex Carey","Team":"AUS","Runs":375,"Matches":10}),
+            ("14",{"Name":"Eoin Morgan","Team":"ENG","Runs":371,"Matches":11}),
+            ("15",{"Name":"Nicholas Pooran","Team":"WI","Runs":367,"Matches":9}),
+            ("16",{"Name":"Mushfiqur Rahim","Team":"BAN","Runs":367,"Matches":8}),
+            ("17",{"Name":"KL Rahul","Team":"IND","Runs":360,"Matches":9}),
+            ("18",{"Name":"Ross Taylor","Team":"NZ","Runs":350,"Matches":10}),
+            ("19",{"Name":"Usman Khawaja","Team":"AUS","Runs":316,"Matches":9})
+
+
+
+create primary index on cricket
+
+select * from cricket where Runs > 400
+
+drop primary index on cricket
+
+create index ExtraIndex on cricket(ExtraIndex)

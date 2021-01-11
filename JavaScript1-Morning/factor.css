@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    margin-top: 5%;
+}
+form {
+    display: inline-block;
+}
+p{
+    background-color: aqua;
+}

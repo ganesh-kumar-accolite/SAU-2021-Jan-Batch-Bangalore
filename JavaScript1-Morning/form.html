@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Details Form</title>
+        <link rel="shortcut icon" href="#"/>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <h1>Personal Details Form</h1><br>
+        <p id="message"></p>
+        <form id="personal">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label>Choose a gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <label for="age">Age Group:</label>
+            <select name="age" id="age">
+              <option value="" selected="selected">Choose here</option>
+              <option value="below18">Below 18</option>
+              <option value="18to36">18-36</option>
+              <option value="36to50">36-50</option>
+              <option value="50to60">50-60</option>
+              <option value="above60">Above 60</option>
+            </select> <br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"> <br>
+            <input type="button" id="btn" value="Submit">
+          </form> 
+    </body>
+    <script src="validate.js"></script>
+</html>

@@ -1,0 +1,232 @@
+.topnav {
+    background-color:blue;
+    overflow: hidden;
+    position: relative;;
+    margin:0;
+    top:0;
+    bottom: 0;
+    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+  }
+html,body{
+  height: 100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+  .topnav a {
+    float: right;
+    color: #480000 ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .topnav a:hover {
+    background-color: #480000;
+    color:#888888;
+  }
+  .grid-container {
+      
+    
+    
+    grid-auto-rows: 1fr;
+    
+  }
+  .grid-item
+  {
+      width:25%;
+      margin:2%;
+      margin-left: 4%;
+      margin-right: 2%;
+      align-content: center;
+      float:left;
+      padding: 10px;
+      background-color: violet;
+      border: tomato;
+      border-width: medium;
+      border-radius: 15%;
+  }
+  .home
+  {
+    
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    align-content: center;
+    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+    
+  }
+  p,li{
+    font-family: "Garamond",serif;
+    font-size: 2em;
+  }
+  #fullname{
+      position: absolute;
+      font-family: "Garamond",serif;
+      font-size:10rem;
+      margin:15rem;
+      padding:0;
+      text-align: center;
+      font-weight:bold;
+      color: cornsilk;
+      text-shadow:dimgray;
+      -webkit-animation: fadein 5s; 
+       -moz-animation: fadein 5s; 
+        -ms-animation: fadein 5s; 
+         -o-animation: fadein 5s; 
+            animation: fadein 5s;
+      
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+  .about{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/ab_bg.jpg");
+    background-image: stretch;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: top;
+    outline: none;
+    display: inline-block;
+    background-size: cover;
+  }
+  .achievement{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/about_bg.jpg");
+    background-image: fill;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: top;
+    outline: none;
+    display: inline-block;
+    background-size: cover;
+  }
+  .project{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    vertical-align: top;
+    outline: none;
+    display: inline-block;
+    align-content: space-between;
+    
+  }
+  #me,#details,#learning,#Good{
+    margin-left: 50%;
+    margin-right: 5%;
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+  }
+  #achive{
+    margin-top: 10%;
+  }
+  #achive,li{
+    margin-left: 5%;
+    font-size:2em;
+    align-content: center;
+    font-weight: bold;
+    
+  }
+  #ptitle{
+    color:teal;
+    font-weight: bold;
+  }
+  #pr{
+    margin-left:3%;
+    
+  }
+  footer{
+    margin-top: 10%;
+    align-content: center;
+    background-color: black;
+    position: relative;
+    width: 100vw;
+  }
+  #creator{
+    text-align: center;
+    color: white;
+  }
+  img{
+    width:50px;
+    height: 50px;
+    background-color:white;
+    border-radius: 50%;
+    border-width: 1%;
+    transition: width 1s,height 1s;
+  }
+  img:hover{
+    width:60px;
+    height:60px;
+  }
+  .links{
+    margin:1%;
+    position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+  .links a{
+    margin-bottom: 5%;
+    
+  }
+  
+  @media (max-width:1000px){
+    p{
+      font-size: 1em;
+    }
+    .grid-item{
+      width:80%;
+      margin-right:5%;
+    }
+    #fullname{
+      font-size: 1.5em;
+    }
+    #me,#details,#learning,#Good{
+      margin-left: 5%;
+  }
+}
